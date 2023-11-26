@@ -24,5 +24,6 @@ RUN curl -fsSL https://get.docker.com -o get-docker.sh && \
 
 # Add the jenkins user to the docker group
 RUN usermod -aG docker jenkins
+RUN service docker start
 
 USER jenkins
